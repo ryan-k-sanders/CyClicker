@@ -1,0 +1,10 @@
+<h1>Editing Course</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', courses_path %>
+
+<script type="text/javascript">
+    $('#content').trigger("create");
+    $('input[type="submit"]').bind('click', function(){$('#myform').submit();});
+</script>

@@ -1,0 +1,64 @@
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <% if session[:account].account_type == 'student' %>
+    <th></th>
+    <th></th>
+    <% end %>
+    <th width="50px"></th>
+    <th></th>
+  </tr>
+  <% i = 0 %>
+<% @questions.each do |question| %>
+  <% i = i + 1 %>
+  <tr>
+    <%= form_for(@student_answer, :remote => true, :id =>'myform') do |f| %>
+
+    <%= f.hidden_field :questionID, :value => question.id %>
+    <%= f.hidden_field :studentID, :value => session[:account].netid %>
+    <td><b><%= i %>.)</b></td>
+    <td><%= question.questionText %></td>
+
+    <% if session[:account].account_type == 'student' %>
+    <td>
+
+      <% @question_answers = QuestionAnswer.where(:questionID => question.id)  %>
+      <% k = 0 %>
+      <% @question_answers.each do |question_answer| %>
+
+          <% k = k + 1 %>
+        <br><input type="hidden" name="student_answer[questionID]" value="<%= question.id%>"/> <input type="radio" name="student_answer[number]" value="<%= k %>"><%= question_answer.answerText %>
+      <% end %>
+    </td>
+    <td><%= f.submit :type=>'image', :width => "50px", :height => "50px", :src => 'http://www.shmoopi.net/wp-content/uploads/2011/10/Save.png' %></td>
+    <% end %>
+
+    <td>
+      <span id="answer_feedback_<%= question.id %>"></span>
+      <% #Answer.where(:studentID => session[:account].netid, :questionID => question.id)%>
+    </td>
+     <td>
+     <a href="<%= url_for :controller => 'graph', :action => 'view', :id => question.id, :poll_id => question.pollID, :number => i %>"><img width="50" height="50" src="http://www.clker.com/cliparts/6/5/f/1/11949844911602338144istogramma_architetto_fr_01.svg.med.png"/></a>
+     </td>
+    <% end %>
+  </tr>
+<% end %>
+</table>
+
+
+
+<div id="backbutton">
+<% if session[:account].account_type == 'student' %>
+<a href="<%= url_for :controller => 'polls', :action => 'index_only', :courseCode => @back %>" data-role="button" data-inline="true">< Back To <%= @back %></a>
+<% else %>
+<a href="<%= url_for :controller => 'polls', :action => 'index', :courseCode => @back %>" data-role="button" data-inline="true">< Back To <%=  @back%></a>
+<% end %>
+</div>
+<script type="text/javascript">
+    $('#backbutton').trigger("create");
+    $('#notice').html('<%= @poll.courseCode %> - <%= @poll.name %>');
+</script>
+
+

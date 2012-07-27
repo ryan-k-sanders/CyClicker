@@ -1,0 +1,15 @@
+<h1>Manage Courses</h1>
+<%= link_to 'Back', home_home_path %>&nbsp;|&nbsp;
+<%= link_to 'New Course', new_course_path %>
+<ul data-role="listview" data-inset="true">
+  <li data-role="list-divider">Current Courses:</li>
+  <% @courses.each do |course| %>
+      <li>
+        <%= link_to "#{course.courseCode}", edit_course_path(course) %>
+        <%= link_to 'Destroy', course, :confirm => 'Are you sure?', :method => :delete, :remote => true, :id=>'delete' %>
+      </li>
+  <% end %>
+</ul>
+<%= link_to 'Back', home_home_path %>&nbsp;|&nbsp;
+<%= link_to 'New Course', new_course_path %>
+<script type="text/javascript">$('#content').trigger("create");</script>

@@ -1,0 +1,27 @@
+
+
+<% if session[:is_authenticated] == true %>
+    <% if session[:account].account_type == 'admin' %>
+
+        <a href= "<%= url_for :controller => 'accounts', :action => 'index' %>" data-role="button" data-inline="true">Manage Accounts</a>
+                 <a href= "<%= url_for :controller => 'courses', :action => 'index' %>" data-role="button" data-inline="true">Manage Courses</a>
+                 <a href= "<%= url_for :controller => 'offerings', :action => 'index' %>" data-role="button" data-inline="true">Manage Offerings</a>
+                 <a href= "<%= url_for :controller => 'enrollments', :action => 'index' %>" data-role="button" data-inline="true">Manage Enrollments</a>
+    <% elsif session[:account].account_type == 'instructor' or session[:account].account_type == 'ta'  %>
+        <a href= "<%= url_for :controller => 'polls' , :action => 'index' %>" data-role="button" data-inline="true">Manage Your Polls</a>
+        <a href= "<%= url_for account_url(session[:account]) %>" data-role="button" data-inline="true">My Account</a>
+
+    <% elsif session[:account].account_type == 'student' %>
+        <a href= "<%= url_for :controller => 'enrollments' , :action => 'view_enrollments_for' %>" data-role="button" data-inline="true">View Your Courses</a>
+        <a href= "<%= url_for account_url(session[:account]) %>" data-role="button" data-inline="true">My Account</a>
+    <% else %>
+
+    <% end %>
+    <% end %>
+
+
+<script type="text/javascript">
+    $('#header').trigger("create");
+</script>
+
+

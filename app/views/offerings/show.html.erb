@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Coursecode:</b>
+  <%= @offering.courseCode %>
+</p>
+
+<p>
+  <b>Sectionno:</b>
+  <%= @offering.sectionNo %>
+</p>
+
+<p>
+  <b>Instructorid:</b>
+  <%= @offering.instructorID %>
+</p>
+
+
+<%= link_to 'Edit', edit_offering_path(@offering) %> |
+<%= link_to 'Back', offerings_path %>

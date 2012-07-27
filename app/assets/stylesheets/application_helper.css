@@ -1,0 +1,56 @@
+#content{
+    width: 98%;
+    height: 100%;
+    overflow: auto;
+    padding-bottom: 100px;
+}
+body{
+  overflow: scroll;
+}
+#footer{
+    position: fixed;
+    z-index: 2;
+    bottom: 0px;
+    width: 100%;
+}
+#blanket {
+    background-color:red;
+    opacity: 0.65;
+    filter:alpha(opacity=65);
+    position:absolute;
+    z-index: 9001;
+    top:0px;
+    left:0px;
+    width:100%;
+    height: 1000px;
+}
+h1
+{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+#noticebar{
+
+    z-index: 8000;
+    width: 450px;
+    height: 26px;
+    background-image: url("../notice_long.png");
+
+    margin-top: -31px;
+    padding-top: 5px;
+    color: black;
+}
+#notice{
+
+    background-repeat: no-repeat;
+    width: 400px;
+    color: black;
+
+}
+
+a{
+    color: #800000;
+    font-weight: bold;
+}
+

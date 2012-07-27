@@ -1,0 +1,11 @@
+<h1>Editing account</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @account %> |
+<% if session[:account].netid != @account.netid %>
+<%= link_to 'Back', accounts_path %>
+<% else %>
+<%= link_to 'Back', account_url(session[:account]) %>
+<% end %>
+                       

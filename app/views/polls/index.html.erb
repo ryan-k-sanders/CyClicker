@@ -1,0 +1,15 @@
+<h1><%= session[:account].name %>'s Polls:</h1>
+<%= link_to 'Back', home_home_path %>&nbsp;|&nbsp;
+<%= link_to 'New Poll', new_poll_path %>
+<ul data-role="listview" data-inset="true">
+  <li data-role="list-divider">Your Polls:</li>
+  <% @polls.each do |poll| %>
+      <li>
+        <%= link_to "#{poll.courseCode} - #{poll.name}", edit_poll_path(poll) %>
+        <%= link_to 'Destroy', poll, :confirm => 'Are you sure?', :method => :delete, :remote => true, :id=>'delete' %>
+      </li>
+  <% end %>
+</ul>
+<%= link_to 'Back', home_home_path %>&nbsp;|&nbsp;
+<%= link_to 'New Poll', new_poll_path %>
+<script type="text/javascript">$('#content').trigger("create");</script>

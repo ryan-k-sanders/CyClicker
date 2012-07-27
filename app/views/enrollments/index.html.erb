@@ -1,0 +1,15 @@
+<h1>Manage Enrollments</h1>
+<%= link_to 'Back', home_home_path %>&nbsp;|&nbsp;
+<%= link_to 'New Enrollment', new_enrollment_path %>
+<ul data-role="listview" data-inset="true">
+  <li data-role="list-divider">Current Enrollments:</li>
+  <% @enrollments.each do |enrollment| %>
+      <li>
+        <%= link_to "#{enrollment.courseCode} - #{enrollment.studentID}", edit_enrollment_path(enrollment) %>
+        <%= link_to 'Destroy', enrollment, :confirm => 'Are you sure?', :method => :delete, :remote => true, :id=>'delete' %>
+      </li>
+  <% end %>
+</ul>
+<%= link_to 'Back', home_home_path %>&nbsp;|&nbsp;
+<%= link_to 'New Enrollment', new_enrollment_path %>
+<script type="text/javascript">$('#content').trigger("create");</script>

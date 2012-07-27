@@ -1,0 +1,32 @@
+<div align="center" style="padding-top: 25px">
+<table padding="10px">
+  <tr>
+    <td rowspan="4"><img src="<%= @account.picture_url%>" width="100" height="100" alt=""/></td>
+    <td><b>Netid:</b></td><td><%= @account.netid %></td>
+  </tr>
+  <tr>
+    <td><b>Name:</b></td><td>
+      <%= @account.name %></td>
+  </tr>
+  <tr>
+    <td><b>Type:</b></td><td>
+      <%= @account.account_type %></td>
+  </tr>
+
+</table>
+
+</div>
+
+<% if session[:account].netid != @account.netid %>
+    <%= link_to 'Edit', edit_account_path(@account) %> |
+    <%= link_to 'Back', accounts_path %>
+<% else %>
+    <a href="<%= url_for :controller => 'home', :action => 'home' %>" data-role="button" data-inline="true">< Back To Home</a>
+
+<% end %>
+
+
+<script type="text/javascript">
+    $('#content').trigger("create");
+    $('#notice').html('<%= @account.name %>\'s Account:');
+</script>

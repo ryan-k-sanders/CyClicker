@@ -1,0 +1,15 @@
+<h1>Manage Offerings</h1>
+<%= link_to 'Back', home_home_path %>&nbsp;|&nbsp;
+<%= link_to 'New Offering', new_offering_path %>
+<ul data-role="listview" data-inset="true">
+  <li data-role="list-divider">Current Offerings:</li>
+  <% @offerings.each do |offering| %>
+      <li>
+        <%= link_to "#{offering.courseCode} - #{offering.sectionNo}", edit_offering_path(offering) %>
+        <%= link_to 'Destroy', offering, :confirm => 'Are you sure?', :method => :delete, :remote => true, :id=>'delete' %>
+      </li>
+  <% end %>
+</ul>
+<%= link_to 'Back', home_home_path %>&nbsp;|&nbsp;
+<%= link_to 'New Offering', new_offering_path %>
+<script type="text/javascript">$('#content').trigger("create");</script>

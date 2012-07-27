@@ -1,0 +1,39 @@
+course1:
+  courseCode: COM S 101
+  courseDescription: ORIENTATION
+course2:
+  courseCode: COM S 103
+  courseDescription: COMPUTER APPLICATNS
+course2A:
+  courseCode: COM S 104
+  courseDescription: INTRO TO COMPUTERS
+course3:
+  courseCode: COM S 107
+  courseDescription: APP COMPUTER PROGRM
+course4:
+  courseCode: COM S 203
+  courseDescription: CAREERS IN COM SCI
+course5:
+  courseCode: COM S 207
+  courseDescription: FUND CPTR PROGRAMNG
+course6:
+  courseCode: COM S 227
+  courseDescription: NTR OBJT ORIEN PRG
+course7:
+  courseCode: COM S 228
+  courseDescription: INTRO DATA STRUCTUR
+course8:
+  courseCode: COM S 229
+  courseDescription: ADV PROGRAMMG TCHNQ
+course9:
+  courseCode: COM S 252
+  courseDescription: LINUX SYS ESENTIALS
+course10:
+  courseCode: COM S 290
+  courseDescription: INDEPENDENT STUDY
+course11:
+  courseCode: COM S 290H
+  courseDescription: INDEP STUDY HONORS
+course11:
+  courseCode: COM S 319
+  courseDescription: SOFTWARE DEVELOPMENT

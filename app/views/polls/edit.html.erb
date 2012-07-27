@@ -1,0 +1,51 @@
+<h1><%= @poll.courseCode  %> - <%= @poll.name  %></h1>
+<%= link_to 'Back', polls_path %>
+
+<%= form_for(@poll, :remote => true) do |f| %>
+
+
+  <div class="field">
+    <%= f.label :name %>:<br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :open %><br />
+    <%= f.check_box :open %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+
+<h2>Listing of questions in this poll</h2>
+
+   <table>
+     <tr>
+
+       <!--<th>Number</th>-->
+       <!--<th>Question Text</th>-->
+       <!--<th>Question Type</th>-->
+       <!--<th></th>-->
+       <th></th>
+       <th></th>
+     </tr>
+
+   <% @questions.each do |question| %>
+     <tr>
+
+       <!--<td><%= question.number %></td>-->
+       <td><%= question.questionText %></td>
+       <!--<td><%= question.questionType %></td>-->
+       <!--<td><%= link_to 'Show', question %></td>-->
+       <td><%= link_to 'Edit Answers', edit_question_path(question) %></td>
+       <td><%= link_to 'Destroy', question, :confirm => 'Are you sure?', :method => :delete, :remote => true, :id=>'delete' %></td>
+       <td> <a href="<%= url_for :controller => 'graph', :action => 'view', :id => question.id, :poll_id => question.pollID %>"><img width="50" height="50" src="http://www.clker.com/cliparts/6/5/f/1/11949844911602338144istogramma_architetto_fr_01.svg.med.png"/></a></td>
+
+     </tr>
+   <% end %>
+   </table>
+
+    <a href="<%= url_for :controller => 'questions', :action => 'new', :id => @poll.id %>">New Question</a>
+
+
+<% end %>

@@ -1,0 +1,71 @@
+<% if @is_mobile == true %>
+
+    <% if session[:is_authenticated] %>
+
+    <% if session[:account].account_type == 'admin' %>
+            <ui data-role="listview">
+            <li><a href= "<%= url_for :controller => 'accounts', :action => 'index' %>" >Manage Accounts</a></li>
+              <li><a href= "<%= url_for :controller => 'courses', :action => 'index' %>" >Manage Courses</a></li>
+              <li><a href= "<%= url_for :controller => 'offerings', :action => 'index' %>" >Manage Offerings</a></li>
+              <li><a href= "<%= url_for :controller => 'enrollments', :action => 'index' %>" >Manage Enrollments</a> </li>
+
+
+    <% elsif session[:account].account_type == 'instructor' or session[:account].account_type == 'ta'  %>
+            <ui data-role="listview">
+            <li><a href= "<%= url_for :controller => 'polls' , :action => 'index' %>" >Manage Your Polls</a> </li>
+              <li><a href= "<%= url_for account_url(session[:account]) %>">My Account</a>       </li>
+            </ui>
+    <% elsif session[:account].account_type == 'student' %>
+        <ui data-role="listview">
+        <li><a href= "<%= url_for :controller => 'home' , :action => 'home' %>" >Home</a>  </li>
+       <li> <a href= "<%= url_for :controller => 'enrollments' , :action => 'view_enrollments_for' %>" >View Your Courses</a></li>
+          <li><a href= "<%= url_for account_url(session[:account]) %>">My Account</a>        </li>
+
+    <% else %>
+    <% end %>
+
+        <% else %>
+        <script type="text/javascript">redirect('<%= url_for(:controller => 'authenticator', :action => 'login') %>',"You Must log in.")</script>
+
+        <% end %>
+    <script type="text/javascript">
+        $('#content').trigger("create");
+        $('#notice').html('Home');
+    </script>
+
+
+<% else %>
+
+
+
+<% if session[:is_authenticated] %>
+
+
+    <center>
+    <% if session[:account].account_type == 'admin'  %>
+
+
+        <% if CyClickerSettings.first.studentsBlocked == true %>
+            <form action="<%= url_for :controller => 'authenticator', :action => 'reauthenticate_all_students' %>" method="get" data-remote="true"><input type="image" src="<%= image_path 'green.png'%>" class="button" value="Un-Lockout All Students"></form>
+
+        <% else %>
+
+            <form action="<%= url_for :controller => 'authenticator', :action => 'deauthenticate_all_students' %>" method="get" data-remote="true"><input type="image" src="<%= image_path 'red.png'%>" class="button" value="Lockout All Students"></form>
+        <% end %>
+
+
+
+
+
+
+    <% end %>
+<% else %>
+    <script type="text/javascript">redirect('<%= url_for(:controller => 'authenticator', :action => 'login') %>',"You Must log in.")</script>
+<% end %>
+</center>
+
+
+<% end %>
+
+
+

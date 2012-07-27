@@ -1,0 +1,29 @@
+<%= form_for(@enrollment, :remote => true) do |f| %>
+  <% if @enrollment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@enrollment.errors.count, "error") %> prohibited this enrollment from being saved:</h2>
+
+      <ul>
+      <% @enrollment.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    Course Code:
+       <%= f.select :courseCode, Offering.all.collect {|c| [ c.courseCode, c.courseCode ] }, {:include_blank => 'Select One'}  %>
+  </div>
+  <div class="field">
+    Section Number:<br />
+    <%= f.select :sectionNo, %w[A B C D E F G H I J K]  %>
+  </div>
+  <div class="field">
+    Student:
+       <%= f.select :studentID, Account.where(:account_type => 'student').collect {|c| [ '(' + c.netid + ') - ' + c.name, c.netid ] }, {:include_blank => 'Select One'}  %>
+  </div>
+  <div class="actions">
+    <%= f.submit(:class => 'button') %>
+  </div>
+<% end %>

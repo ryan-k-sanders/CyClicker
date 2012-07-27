@@ -1,0 +1,30 @@
+<h1>Listing questions</h1>
+
+<table>
+  <tr>
+    <th>Pollid</th>
+    <!--<th>Number</th>-->
+    <th>Questiontext</th>
+    <!--<th>Questiontype</th>-->
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @questions.each do |question| %>
+  <tr>
+    <td><%= question.pollID %></td>
+    <td><%= question.number %></td>
+    <td><%= question.questionText %></td>
+    <td><%= question.questionType %></td>
+    <td><%= link_to 'Show', question %></td>
+    <td><%= link_to 'Edit', edit_question_path(question) %></td>
+    <td><%= link_to 'Destroy', question, :confirm => 'Are you sure?', :method => :delete, :remote => true, :id=>'delete' %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Question', new_question_path %>
+<%= link_to 'Back', home_home_path %>

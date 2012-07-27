@@ -1,0 +1,26 @@
+
+<%= form_for(@course, :remote => true) do |f| %>
+  <% if @course.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@course.errors.count, "error") %> prohibited this course from being saved:</h2>
+
+      <ul>
+      <% @course.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    Course Code:<br />
+    <%= f.text_field :courseCode %>
+  </div>
+  <div class="field">
+    Course Description:<br />
+    <%= f.text_field :courseDescription %>
+  </div>
+  <div class="actions">
+    <%= f.submit(:class => 'button') %>
+  </div>
+<% end %>

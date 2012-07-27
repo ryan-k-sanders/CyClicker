@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Studentid:</b>
+  <%= @student_answer.studentID %>
+</p>
+
+<p>
+  <b>Questionid:</b>
+  <%= @student_answer.questionID %>
+</p>
+
+<p>
+  <b>Number:</b>
+  <%= @student_answer.number %>
+</p>
+
+
+<%= link_to 'Edit', edit_student_answer_path(@student_answer) %> |
+<%= link_to 'Back', student_answers_path %>

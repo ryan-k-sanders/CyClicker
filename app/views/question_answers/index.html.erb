@@ -1,0 +1,30 @@
+<h1>Listing question_answers</h1>
+
+<table>
+  <tr>
+    <th>Questionid</th>
+    <th>Number</th>
+    <th>Answertext</th>
+    <th>Correctanswer</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @question_answers.each do |question_answer| %>
+  <tr>
+    <td><%= question_answer.questionID %></td>
+    <td><%= question_answer.number %></td>
+    <td><%= question_answer.answerText %></td>
+    <td><%= question_answer.correctAnswer %></td>
+    <td><%= link_to 'Show', question_answer %></td>
+    <td><%= link_to 'Edit', edit_question_answer_path(question_answer) %></td>
+    <td><%= link_to 'Destroy', question_answer, :confirm => 'Are you sure?', :method => :delete, :remote => true, :id=>'delete' %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Question answer', new_question_answer_path %>
+<%= link_to 'Back', home_home_path %>

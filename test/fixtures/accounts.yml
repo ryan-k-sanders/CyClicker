@@ -1,0 +1,692 @@
+admin:
+  netid: admin
+  password: password
+  name: Administrator
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+  account_type: admin
+instructor:
+  netid: smitra
+  password: password
+  name: Simanta Mitra
+  picture_url: http://i1172.photobucket.com/albums/r577/coms309groupproject/41771_1079170873_6438_n.jpg
+  account_type: instructor
+student1:
+  netid: rks
+  password: password
+  name: Ryan Sanders
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student2:
+  netid: mwauters
+  password: password
+  name: Michael Wauters
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student3:
+  netid: calitfin
+  password: password
+  name: Charles Litfin
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student4:
+  netid: cjhicks
+  password: password
+  name: Christopher Hicks
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student5:
+  netid: dalia
+  password: password
+  name: Dalia Abo-Sheasha
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student6:
+  netid: kakert
+  password: password
+  name: Karl Akert
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student7:
+  netid: trenta14
+  password: password
+  name: Trenton Anagnostopoulos
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student8:
+  netid: mbauer
+  password: password
+  name: Mark Bauer
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student9:
+  netid: tedbeem
+  password: password
+  name: Theodore Beem
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student10:
+  netid: tbell
+  password: password
+  name: Tyler Bell
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student11:
+  netid: tnberger
+  password: password
+  name: Tae Berger
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student12:
+  netid: boeke
+  password: password
+  name: Craig Boeke
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student13:
+  netid: jbradley
+  password: password
+  name: Jamison Bradley
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student14:
+  netid: fabianb
+  password: password
+  name: Fabian Briesmoore
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student15:
+  netid: dbrouwer
+  password: password
+  name: Daniel Brouwer
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student16:
+  netid: mcarlett
+  password: password
+  name: Melissa Carletta
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student17:
+  netid: carl1978
+  password: password
+  name: Carl Chapman
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student18:
+  netid: ejcheat
+  password: password
+  name: Eric Cheatham
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student19:
+  netid: xiaodong
+  password: password
+  name: Xiaodong Chen
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student20:
+  netid: mac717
+  password: password
+  name: Michael Christenson
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student21:
+  netid: nclague
+  password: password
+  name: Nathan Clague
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student22:
+  netid: patclark
+  password: password
+  name: Patrick Clark
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student23:
+  netid: lissa07
+  password: password
+  name: Melissa Clark
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student24:
+  netid: ariellec
+  password: password
+  name: Arielle Czalbowski
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student25:
+  netid: mpdavis
+  password: password
+  name: Michael Davis
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student26:
+  netid: edudelac
+  password: password
+  name: Eduardo De La Cruz
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student27:
+  netid: aedomino
+  password: password
+  name: Arthur Domino
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student28:
+  netid: rpeggers
+  password: password
+  name: Rudolph Eggers
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student29:
+  netid: yezhou
+  password: password
+  name: Yezhou Fang
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student30:
+  netid: kfattig
+  password: password
+  name: Kyle Fattig
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student31:
+  netid: frericks
+  password: password
+  name: Jacob Frericks
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student32:
+  netid: gany
+  password: password
+  name: Yue Gan
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student33:
+  netid: cgarrett
+  password: password
+  name: Carl Garrett
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student34:
+  netid: mrgoll12
+  password: password
+  name: Mark Gollnick
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student35:
+  netid: gramstad
+  password: password
+  name: Nicholas Gramstad
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student36:
+  netid: josephg
+  password: password
+  name: Joseph Groenenboom
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student37:
+  netid: ctgroff
+  password: password
+  name: Cole Groff
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student38:
+  netid: pkhall
+  password: password
+  name: Piriya Hall
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student39:
+  netid: mharney
+  password: password
+  name: Max Harney
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student40:
+  netid: ashashim
+  password: password
+  name: Muhammad Asri Hashim
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student41:
+  netid: zheilman
+  password: password
+  name: Zachary Heilman
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student42:
+  netid: jhenze
+  password: password
+  name: Jonathan Henze
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student43:
+  netid: sjhdez
+  password: password
+  name: Stephen Hernandez
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student44:
+  netid: jayhong
+  password: password
+  name: Jay Hong
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student45:
+  netid: hukeji
+  password: password
+  name: Keji Hu
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student46:
+  netid: alecj
+  password: password
+  name: Alec Johanson
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student47:
+  netid: mdjohn
+  password: password
+  name: Margaret John
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student48:
+  netid: andrewjo
+  password: password
+  name: Andrew Johnson
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student49:
+  netid: kaiserja
+  password: password
+  name: Jason Kaiser
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student50:
+  netid: trkalpin
+  password: password
+  name: Timothy Kalpin
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student51:
+  netid: hkim
+  password: password
+  name: Hyun Jun Kim
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student52:
+  netid: kostya
+  password: password
+  name: Konstiantyn Kononenkov
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student53:
+  netid: askratz
+  password: password
+  name: Alexander Kratz
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student54:
+  netid: bkraus
+  password: password
+  name: Brian Kraus
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student55:
+  netid: ckuhfal
+  password: password
+  name: Christina Kuhfal
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student56:
+  netid: jgkujawa
+  password: password
+  name: James Kujawa
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student57:
+  netid: jstnlnds
+  password: password
+  name: Justin Landsgard
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student58:
+  netid: elarssen
+  password: password
+  name: Eric Larssen
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student59:
+  netid: leblanc
+  password: password
+  name: Steven Leblanc
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student60:
+  netid: mlin
+  password: password
+  name: Mingwei Lin
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student61:
+  netid: eylin
+  password: password
+  name: Eric Lin
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student62:
+  netid: madi
+  password: password
+  name: Di Ma
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student63:
+  netid: mmallett
+  password: password
+  name: Mathew Mallett
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student64:
+  netid: edwinom
+  password: password
+  name: Edwin Martinez-Velazquez
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student65:
+  netid: bmaxwell
+  password: password
+  name: Brandon Maxwell
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student66:
+  netid: seanm1
+  password: password
+  name: Sean McClain
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student67:
+  netid: trmixson
+  password: password
+  name: Tyler Mixson
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student68:
+  netid: mjmoen
+  password: password
+  name: Mark Moen
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student69:
+  netid: klmoore
+  password: password
+  name: Kelsey Moore
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student70:
+  netid: spencerm
+  password: password
+  name: Spencer Morrison
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student71:
+  netid: mozqueda
+  password: password
+  name: Juan Mozqueda-Padilla
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student72:
+  netid: maneill
+  password: password
+  name: Matt Neill
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student73:
+  netid: anelson6
+  password: password
+  name: Ashley Nelson
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student74:
+  netid: demo
+  password: password
+  name: Demo
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student75:
+  netid: orem
+  password: password
+  name: Michael Ore
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student76:
+  netid: panl2
+  password: password
+  name: Luyao Pan
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student77:
+  netid: svperez
+  password: password
+  name: Steven Perez
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student78:
+  netid: j7peters
+  password: password
+  name: Joshua Peters
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student79:
+  netid: centuri
+  password: password
+  name: Jacob Phillips
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student80:
+  netid: kunq
+  password: password
+  name: Kun Qian
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student81:
+  netid: breber
+  password: password
+  name: Brian Reber
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student82:
+  netid: dreiser
+  password: password
+  name: Derek Reiser
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student83:
+  netid: mdrench
+  password: password
+  name: Matthew Rench
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student84:
+  netid: dillonr
+  password: password
+  name: Dillon Ricketts
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student85:
+  netid: rpromore
+  password: password
+  name: Robert Romore
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student86:
+  netid: jsickora
+  password: password
+  name: Joseph Ross
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student87:
+  netid: jpryan
+  password: password
+  name: John Ryan
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student88:
+  netid: sandlund
+  password: password
+  name: Bryce Sandlund
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student89:
+  netid: sschroe
+  password: password
+  name: Scott Schroeder
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student90:
+  netid: lschropp
+  password: password
+  name: Landon Schropp
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student91:
+  netid: jschulz
+  password: password
+  name: Jacob Schulz
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student92:
+  netid: mjsenter
+  password: password
+  name: Michael Senter
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student93:
+  netid: jsmith
+  password: password
+  name: Jonathan Smith
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student94:
+  netid: ajsobek
+  password: password
+  name: Alex Sobek
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student95:
+  netid: staley7
+  password: password
+  name: Lance Staley
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student96:
+  netid: micahs
+  password: password
+  name: Micah Stevenson
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student97:
+  netid: seans22
+  password: password
+  name: Sean Strickland
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student98:
+  netid: asu1351
+  password: password
+  name: Adam Sunderman
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student99:
+  netid: tansen78
+  password: password
+  name: Sen Tan
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student100:
+  netid: thuong88
+  password: password
+  name: Thuong Tran
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student101:
+  netid: djturner
+  password: password
+  name: David Turner
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student102:
+  netid: curtisu
+  password: password
+  name: Curtis Ullerich
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student103:
+  netid: chrisv
+  password: password
+  name: Christopher Van Oort
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student104:
+  netid: williamv
+  password: password
+  name: William Van Walbeek
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student105:
+  netid: mavolk
+  password: password
+  name: Marjorie Volk
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student106:
+  netid: wangyaze
+  password: password
+  name: Yaze Wang
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student107:
+  netid: twegter
+  password: password
+  name: Todd Wegter
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student108:
+  netid: jwheeler
+  password: password
+  name: Justin Wheeler
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student109:
+  netid: wubo
+  password: password
+  name: Bo Wu
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student110:
+  netid: yoonjh86
+  password: password
+  name: Jang Ho Yoon
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student111:
+  netid: qzhao
+  password: password
+  name: Qiyu Zhao
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+student112:
+  netid: zyf
+  password: password
+  name: Yifei Zhu
+  account_type: student
+  picture_url: http://www.almostsavvy.com/wp-content/uploads/2011/04/profile-photo.jpg
+instructor1:
+  netid: sandeepk
+  password: password
+  name: Sandeep Krishnan
+  picture_url: http://i1172.photobucket.com/albums/r577/coms309groupproject/Sandeep_Krishnan.jpg
+  account_type: ta
+
+

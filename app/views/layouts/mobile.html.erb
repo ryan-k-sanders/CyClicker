@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <title>CyClicker</title>
+
+
+
+
+
+  <%= stylesheet_link_tag "application_helper_mobile" %>
+
+  <%= stylesheet_link_tag "cyclicker.min" %>
+  <%= stylesheet_link_tag "http://code.jquery.com/mobile/1.1.0/jquery.mobile.structure-1.1.0.min.css" %>
+  <%= javascript_include_tag "jquery" %>
+  <%= javascript_include_tag "rails" %>
+
+
+  <script type="text/javascript">
+      if (typeof jQuery == 'undefined') {
+          alert('ERROR: Connect to the internet.  Application will not fully load otherwise.');
+          throw new Error("Could not connect to internet.  Needed to fully load application")
+      }
+      GLOBAL_STOP = false;
+      ALLOW_USER_BLOCKING = true;
+
+      $(document).bind("mobileinit", function(){
+          $.mobile.ajaxEnabled = false;
+          $.mobile.ajaxFormsEnabled = false;
+      });
+
+      function redirect(url, message){
+
+          $('#content').hide();
+          $('#content').html('Loading....');
+          $('#content').load(url).fadeIn();
+          $('#header').load('<%= url_for :controller => 'home' , :action => 'header' %>').fadeIn();
+          $('#notice').html(message).fadeIn();
+
+
+      }
+
+
+      $("a").live('click', function() {
+          GLOBAL_STOP = true;
+          var id = $(this).attr('id');
+          if(id != "delete"){
+              redirect(this.href,'');
+          }
+
+
+          return false;
+      });
+
+
+
+
+
+  </script>
+
+  <%= javascript_include_tag "http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.js" %>
+
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+<div data-role="page">
+
+  <div data-role="header" align="center">
+
+    <%= image_tag 'logo.png', :size=> '300x150' %>
+
+  <div id="noticebar"><span id="notice"></span></div>
+  </div>
+
+
+
+
+  <div id="content" data-role="content"></div>
+  <div id="bottom_spacer"/>
+
+  <div id="footer" data-role="footer" align="center">
+
+    <form onclick="GLOBAL_STOP = true;" action="<%= url_for :controller => 'authenticator', :action => 'deauthenticate' %>" method="get" data-remote="true"><input type="submit" class="button" value="Logout"></form>
+    <h3>&copy;2012 CyClicker</h3></div>
+</div>
+
+
+<div id="blanket"/>
+<script>
+    var informed = false;
+    function blockedCheck() {
+        $.ajax({
+            url: "<%= url_for :controller => 'authenticator', :action => 'blocked' %>",
+            type: "POST",
+            dataType: "json",
+            success: function(data) {
+                if(data.toString() == "true"){
+                    $('#blanket').fadeIn();
+                    //$('#popup').html('The Administrator has Blocked all Students.  Please wait for block to be lifted.');
+                    //$('#popup').fadeIn();
+                    if(informed == false){
+                               //alert('The Administrator has Blocked all Students.  Please wait for block to be lifted.');
+                               informed = true;
+                    }
+                }
+                else{
+
+                    $('#blanket').fadeOut();
+                    $('#popup').fadeOut();
+                    informed = false;
+                }
+
+            }
+        });
+
+
+    }
+    $(document).ready(function(){
+
+
+
+
+
+
+        if (navigator.userAgent.indexOf("Firefox")!=-1 || navigator.userAgent.indexOf("MSIE")!=-1){
+             var image = '<%= image_tag 'suport.png', :size=> '300x150' %>';
+
+            $("#content").html("<center>CyClicker has only been tested  the following browsers (Please use one of them):<br/> "+image+"</center>");
+
+            $('#blanket').css("background-color" , "black");
+            $('#popup').hide();
+
+        }
+        else{
+
+                    blockedCheck();
+                    $('#content').load('<% url_for :controller => 'authenticator', :action => 'login' %>');
+                    $('#header').load('<%= url_for :controller => 'home' , :action => 'header' %>');
+                    $('#blanket').hide();
+                    $('#popup').hide();
+
+            if(ALLOW_USER_BLOCKING){
+                var bc = setInterval(blockedCheck,10000);
+            }
+
+        }
+
+
+
+    });
+
+
+    $("input").live('focus', function() {
+        $('#footer').hide();
+    });
+
+    $("input").live('blur', function() {
+        $('#footer').show();
+    });
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
+

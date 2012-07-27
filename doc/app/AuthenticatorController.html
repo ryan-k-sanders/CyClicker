@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class AuthenticatorController - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/controllers/authenticator_controller.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="ApplicationController.html">ApplicationController</a>
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-authenticate">#authenticate</a>
+    
+    <li><a href="#method-i-blocked">#blocked</a>
+    
+    <li><a href="#method-i-deauthenticate">#deauthenticate</a>
+    
+    <li><a href="#method-i-deauthenticate_all_students">#deauthenticate_all_students</a>
+    
+    <li><a href="#method-i-login">#login</a>
+    
+    <li><a href="#method-i-reauthenticate_all_students">#reauthenticate_all_students</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Account.html">Account</a>
+  
+    <li><a href="./AccountsController.html">AccountsController</a>
+  
+    <li><a href="./AccountsHelper.html">AccountsHelper</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./AuthenticatorController.html">AuthenticatorController</a>
+  
+    <li><a href="./AuthenticatorHelper.html">AuthenticatorHelper</a>
+  
+    <li><a href="./Course.html">Course</a>
+  
+    <li><a href="./CoursesController.html">CoursesController</a>
+  
+    <li><a href="./CoursesHelper.html">CoursesHelper</a>
+  
+    <li><a href="./CyClickerSettings.html">CyClickerSettings</a>
+  
+    <li><a href="./Enrollment.html">Enrollment</a>
+  
+    <li><a href="./EnrollmentsController.html">EnrollmentsController</a>
+  
+    <li><a href="./EnrollmentsHelper.html">EnrollmentsHelper</a>
+  
+    <li><a href="./GraphController.html">GraphController</a>
+  
+    <li><a href="./HomeController.html">HomeController</a>
+  
+    <li><a href="./HomeHelper.html">HomeHelper</a>
+  
+    <li><a href="./Offering.html">Offering</a>
+  
+    <li><a href="./OfferingsController.html">OfferingsController</a>
+  
+    <li><a href="./OfferingsHelper.html">OfferingsHelper</a>
+  
+    <li><a href="./Poll.html">Poll</a>
+  
+    <li><a href="./PollsController.html">PollsController</a>
+  
+    <li><a href="./PollsHelper.html">PollsHelper</a>
+  
+    <li><a href="./Question.html">Question</a>
+  
+    <li><a href="./QuestionAnswer.html">QuestionAnswer</a>
+  
+    <li><a href="./QuestionAnswersController.html">QuestionAnswersController</a>
+  
+    <li><a href="./QuestionAnswersHelper.html">QuestionAnswersHelper</a>
+  
+    <li><a href="./QuestionsController.html">QuestionsController</a>
+  
+    <li><a href="./QuestionsHelper.html">QuestionsHelper</a>
+  
+    <li><a href="./StudentAnswer.html">StudentAnswer</a>
+  
+    <li><a href="./StudentAnswersController.html">StudentAnswersController</a>
+  
+    <li><a href="./StudentAnswersHelper.html">StudentAnswersHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class AuthenticatorController</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-authenticate" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">authenticate</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="authenticate-source">
+            <pre><span class="ruby-comment"># File app/controllers/authenticator_controller.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">authenticate</span>
+  <span class="ruby-identifier">account</span> = <span class="ruby-constant">Account</span>.<span class="ruby-identifier">where</span>(<span class="ruby-value">:netid</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:netid</span>]).<span class="ruby-identifier">first</span>
+
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">account</span> <span class="ruby-keyword">and</span> (<span class="ruby-identifier">params</span>[<span class="ruby-value">:netid</span>]<span class="ruby-operator">==</span><span class="ruby-identifier">account</span>[<span class="ruby-value">:netid</span>] <span class="ruby-keyword">and</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:password</span>]<span class="ruby-operator">==</span><span class="ruby-identifier">account</span>[<span class="ruby-value">:password</span>])
+      <span class="ruby-identifier">session</span>[<span class="ruby-value">:is_authenticated</span>] = <span class="ruby-keyword">true</span>
+      <span class="ruby-identifier">session</span>[<span class="ruby-value">:account</span>] = <span class="ruby-identifier">account</span>
+      <span class="ruby-identifier">session</span>[<span class="ruby-value">:account_type</span>] = <span class="ruby-identifier">account</span>.<span class="ruby-identifier">account_type</span>
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">js</span> { <span class="ruby-identifier">render</span> <span class="ruby-value">:js</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;redirect('&quot;</span><span class="ruby-operator">+</span> <span class="ruby-identifier">url_for</span>(<span class="ruby-value">:controller</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'home'</span>, <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'home'</span>)<span class="ruby-operator">+</span><span class="ruby-string">&quot;', '&quot;</span><span class="ruby-operator">+</span><span class="ruby-string">&quot;Login Successful&quot;</span><span class="ruby-operator">+</span><span class="ruby-string">&quot;');&quot;</span>}
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">format</span>.<span class="ruby-identifier">js</span> { <span class="ruby-identifier">render</span> <span class="ruby-value">:js</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;redirect('#{ url_for :controller =&gt; 'authenticator', :action =&gt; 'login'}', '&quot;</span><span class="ruby-operator">+</span><span class="ruby-string">&quot;Login Unsuccessful&quot;</span><span class="ruby-operator">+</span><span class="ruby-string">&quot;');&quot;</span>}
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- authenticate-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- authenticate-method -->
+
+    
+      <div id="method-i-blocked" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">blocked</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="blocked-source">
+            <pre><span class="ruby-comment"># File app/controllers/authenticator_controller.rb, line 47</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">blocked</span>
+    <span class="ruby-identifier">settings</span> = <span class="ruby-constant">CyClickerSettings</span>.<span class="ruby-identifier">first</span>
+    <span class="ruby-identifier">blocked</span> = <span class="ruby-identifier">settings</span>.<span class="ruby-identifier">studentsBlocked</span>
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:json</span> =<span class="ruby-operator">&gt;</span> (<span class="ruby-identifier">blocked</span> <span class="ruby-keyword">and</span> (<span class="ruby-identifier">session</span>[<span class="ruby-value">:account</span>].<span class="ruby-identifier">account_type</span> <span class="ruby-operator">==</span> <span class="ruby-string">'student'</span>))
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- blocked-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- blocked-method -->
+
+    
+      <div id="method-i-deauthenticate" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">deauthenticate</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="deauthenticate-source">
+            <pre><span class="ruby-comment"># File app/controllers/authenticator_controller.rb, line 22</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">deauthenticate</span>
+  <span class="ruby-identifier">session</span>.<span class="ruby-identifier">clear</span>
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">js</span> { <span class="ruby-identifier">render</span> <span class="ruby-value">:js</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;redirect('#{ url_for :controller =&gt; 'authenticator', :action =&gt; 'login'}', '&quot;</span><span class="ruby-operator">+</span><span class="ruby-string">&quot;Logout Successful&quot;</span><span class="ruby-operator">+</span><span class="ruby-string">&quot;');&quot;</span>}
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- deauthenticate-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- deauthenticate-method -->
+
+    
+      <div id="method-i-deauthenticate_all_students" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">deauthenticate_all_students</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="deauthenticate_all_students-source">
+            <pre><span class="ruby-comment"># File app/controllers/authenticator_controller.rb, line 29</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">deauthenticate_all_students</span>
+  <span class="ruby-identifier">settings</span> = <span class="ruby-constant">CyClickerSettings</span>.<span class="ruby-identifier">first</span>
+  <span class="ruby-identifier">settings</span>.<span class="ruby-identifier">studentsBlocked</span>=<span class="ruby-keyword">true</span>
+  <span class="ruby-identifier">settings</span>.<span class="ruby-identifier">save</span>
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">js</span> { <span class="ruby-identifier">render</span> <span class="ruby-value">:js</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;redirect('#{ url_for :controller =&gt; 'home', :action =&gt; 'home'}', '&quot;</span><span class="ruby-operator">+</span><span class="ruby-string">&quot;All Students Locked Out&quot;</span><span class="ruby-operator">+</span><span class="ruby-string">&quot;');&quot;</span>}
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- deauthenticate_all_students-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- deauthenticate_all_students-method -->
+
+    
+      <div id="method-i-login" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">login</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="login-source">
+            <pre><span class="ruby-comment"># File app/controllers/authenticator_controller.rb, line 2</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">login</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- login-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- login-method -->
+
+    
+      <div id="method-i-reauthenticate_all_students" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">reauthenticate_all_students</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="reauthenticate_all_students-source">
+            <pre><span class="ruby-comment"># File app/controllers/authenticator_controller.rb, line 38</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">reauthenticate_all_students</span>
+  <span class="ruby-identifier">settings</span> = <span class="ruby-constant">CyClickerSettings</span>.<span class="ruby-identifier">first</span>
+  <span class="ruby-identifier">settings</span>.<span class="ruby-identifier">studentsBlocked</span>=<span class="ruby-keyword">false</span>
+  <span class="ruby-identifier">settings</span>.<span class="ruby-identifier">save</span>
+  <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">format</span>.<span class="ruby-identifier">js</span> { <span class="ruby-identifier">render</span> <span class="ruby-value">:js</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;redirect('#{ url_for :controller =&gt; 'home', :action =&gt; 'home'}', '&quot;</span><span class="ruby-operator">+</span><span class="ruby-string">&quot;All Students have been reauthorized to use the system.&quot;</span><span class="ruby-operator">+</span><span class="ruby-string">&quot;');&quot;</span>}
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- reauthenticate_all_students-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- reauthenticate_all_students-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

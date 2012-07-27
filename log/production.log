@@ -1,0 +1,202 @@
+
+
+Started GET "/" for 10.24.169.5 at Tue Apr 24 09:13:26 -0500 2012
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/mobile (6.1ms)
+Completed 500 Internal Server Error in 67ms
+
+ActionView::Template::Error (application_helper.mobile.css isn't precompiled):
+    8: 
+    9: 
+    10: 
+    11:   <%= stylesheet_link_tag "application_helper.mobile" %>
+    12:   <%= stylesheet_link_tag "jquery.mobile" %>
+    13: 
+    14:   <%= javascript_include_tag "jquery" %>
+  app/views/layouts/mobile.html.erb:11:in `_app_views_layouts_mobile_html_erb__1659109786_70227636057020'
+
+
+
+
+Started GET "/favicon.ico" for 10.24.169.5 at Tue Apr 24 09:13:27 -0500 2012
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.3) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.3) lib/rails/commands.rb:55
+  railties (3.2.3) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.3) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+
+
+Started GET "/" for 10.24.169.5 at Tue Apr 24 09:14:02 -0500 2012
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/mobile (6.0ms)
+Completed 500 Internal Server Error in 66ms
+
+ActionView::Template::Error (application_helper.mobile.css isn't precompiled):
+    8: 
+    9: 
+    10: 
+    11:   <%= stylesheet_link_tag "application_helper.mobile" %>
+    12:   <%= stylesheet_link_tag "jquery.mobile" %>
+    13: 
+    14:   <%= javascript_include_tag "jquery" %>
+  app/views/layouts/mobile.html.erb:11:in `_app_views_layouts_mobile_html_erb__863666627_70164636639380'
+
+
+
+
+Started GET "/" for 10.24.169.5 at Tue Apr 24 09:15:41 -0500 2012
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/mobile (0.5ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (application_helper.mobile.css isn't precompiled):
+    8: 
+    9: 
+    10: 
+    11:   <%= stylesheet_link_tag "application_helper.mobile" %>
+    12:   <%= stylesheet_link_tag "jquery.mobile" %>
+    13: 
+    14:   <%= javascript_include_tag "jquery" %>
+  app/views/layouts/mobile.html.erb:11:in `_app_views_layouts_mobile_html_erb__863666627_70164636639380'
+
+
+
+
+Started GET "/" for 10.24.169.5 at Tue Apr 24 09:15:54 -0500 2012
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/mobile (5.2ms)
+Completed 500 Internal Server Error in 64ms
+
+ActionView::Template::Error (application_helper.mobile.css isn't precompiled):
+    8: 
+    9: 
+    10: 
+    11:   <%= stylesheet_link_tag "application_helper.mobile" %>
+    12:   <%= stylesheet_link_tag "jquery.mobile" %>
+    13: 
+    14:   <%= javascript_include_tag "jquery" %>
+  app/views/layouts/mobile.html.erb:11:in `_app_views_layouts_mobile_html_erb__1729424944_69924871966900'
+
+
+
+
+Started GET "/" for 10.24.169.5 at Tue Apr 24 09:16:35 -0500 2012
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/mobile (6.0ms)
+Completed 500 Internal Server Error in 67ms
+
+ActionView::Template::Error (application_helper_mobile.css isn't precompiled):
+    8: 
+    9: 
+    10: 
+    11:   <%= stylesheet_link_tag "application_helper_mobile" %>
+    12:   <%= stylesheet_link_tag "jquery.mobile" %>
+    13: 
+    14:   <%= javascript_include_tag "jquery" %>
+  app/views/layouts/mobile.html.erb:11:in `_app_views_layouts_mobile_html_erb___1585579065_70106845418900'
+
+
+Compiled application.js  (1ms)  (pid 27555)
+Compiled accounts.css  (29ms)  (pid 27555)
+Compiled application_helper.css  (2ms)  (pid 27555)
+Compiled application_helper_mobile.css  (1ms)  (pid 27555)
+Compiled authenticator.css  (6ms)  (pid 27555)
+Compiled courses.css  (5ms)  (pid 27555)
+Compiled enrollments.css  (6ms)  (pid 27555)
+Compiled home.css  (6ms)  (pid 27555)
+Compiled jquery.mobile.css  (1ms)  (pid 27555)
+Compiled offerings.css  (5ms)  (pid 27555)
+Compiled polls.css  (5ms)  (pid 27555)
+Compiled question_answers.css  (5ms)  (pid 27555)
+Compiled questions.css  (5ms)  (pid 27555)
+Compiled scaffolds.css  (25ms)  (pid 27555)
+Compiled student_answers.css  (5ms)  (pid 27555)
+Compiled application.css  (983ms)  (pid 27555)
+Compiled application.js  (1ms)  (pid 27555)
+Compiled accounts.css  (27ms)  (pid 27555)
+Compiled application_helper.css  (1ms)  (pid 27555)
+Compiled application_helper_mobile.css  (1ms)  (pid 27555)
+Compiled authenticator.css  (5ms)  (pid 27555)
+Compiled courses.css  (5ms)  (pid 27555)
+Compiled enrollments.css  (89ms)  (pid 27555)
+Compiled home.css  (5ms)  (pid 27555)
+Compiled jquery.mobile.css  (1ms)  (pid 27555)
+Compiled offerings.css  (5ms)  (pid 27555)
+Compiled polls.css  (5ms)  (pid 27555)
+Compiled question_answers.css  (5ms)  (pid 27555)
+Compiled questions.css  (5ms)  (pid 27555)
+Compiled scaffolds.css  (25ms)  (pid 27555)
+Compiled student_answers.css  (5ms)  (pid 27555)
+Compiled application.css  (862ms)  (pid 27555)
+
+
+Started GET "/" for 10.24.169.5 at Tue Apr 24 09:18:26 -0500 2012
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/mobile (5.8ms)
+Completed 500 Internal Server Error in 65ms
+
+ActionView::Template::Error (application_helper_mobile.css isn't precompiled):
+    8: 
+    9: 
+    10: 
+    11:   <%= stylesheet_link_tag "application_helper_mobile" %>
+    12:   <%= stylesheet_link_tag "jquery.mobile" %>
+    13: 
+    14:   <%= javascript_include_tag "jquery" %>
+  app/views/layouts/mobile.html.erb:11:in `_app_views_layouts_mobile_html_erb___1949908452_70320970620200'
+
+
+
+
+Started GET "/" for 10.24.169.5 at Tue Apr 24 09:22:06 -0500 2012
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/mobile (0.6ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (application_helper_mobile.css isn't precompiled):
+    8: 
+    9: 
+    10: 
+    11:   <%= stylesheet_link_tag "application_helper_mobile" %>
+    12:   <%= stylesheet_link_tag "jquery.mobile" %>
+    13: 
+    14:   <%= javascript_include_tag "jquery" %>
+  app/views/layouts/mobile.html.erb:11:in `_app_views_layouts_mobile_html_erb___1949908452_70320970620200'
+
+

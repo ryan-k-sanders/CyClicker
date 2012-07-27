@@ -1,0 +1,21 @@
+
+<!--<script type="text/javascript"></script>-->
+<!--<h1>Open Polls for <%= params[:courseCode]  %>:</h1>-->
+
+<ui data-role="listview">
+
+<% @polls.each do |poll| %>
+  <% if poll.open == true %>
+  <li>
+    <a href="<%= url_for poll_path(poll) %>">Take <%= poll.name %></a>
+  </li>
+  <% end %>
+<% end %>
+ </ui>
+<a href="<%= url_for :controller => 'enrollments', :action => 'view_enrollments_for' %>" data-role="button" data-inline="true">< Back To Courses</a>
+<script type="text/javascript">
+    $('#content').trigger("create");
+    $('#notice').html('Open Polls for <%= params[:courseCode]  %>:');
+
+</script>
+

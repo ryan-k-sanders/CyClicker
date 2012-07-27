@@ -1,0 +1,14 @@
+<ui data-role="listview">
+<% @enrollments.each do |enrollment| %>
+
+  <li>
+    <a href="<%= url_for :controller => 'polls', :action => 'index_only', :courseCode => enrollment.courseCode %>"><%= enrollment.courseCode %>&nbsp;<%= enrollment.sectionNo %></a>
+  </li>
+<% end %>
+   </ui>
+
+<a href="<%= url_for :controller => 'home', :action => 'home' %>" data-role="button" data-inline="true">< Back To Home</a>
+<script type="text/javascript">
+    $('#content').trigger("create");
+    $('#notice').html('Your Courses:');
+</script>

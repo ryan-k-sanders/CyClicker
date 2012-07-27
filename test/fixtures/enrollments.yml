@@ -1,0 +1,559 @@
+student1:
+  studentID: rks
+  sectionNo: A
+  courseCode: COM S 309
+  
+student2:
+  studentID: mwauters
+  sectionNo: A
+  courseCode: COM S 309
+  
+student3:
+  studentID: calitfin
+  sectionNo: A
+  courseCode: COM S 309
+  
+student4:
+  studentID: cjhicks
+  sectionNo: A
+  courseCode: COM S 309
+  
+student5:
+  studentID: dalia
+  sectionNo: A
+  courseCode: COM S 309
+  
+student6:
+  studentID: kakert
+  sectionNo: A
+  courseCode: COM S 309
+  
+student7:
+  studentID: trenta14
+  sectionNo: A
+  courseCode: COM S 309
+  
+student8:
+  studentID: mbauer
+  sectionNo: A
+  courseCode: COM S 309
+  
+student9:
+  studentID: tedbeem
+  sectionNo: A
+  courseCode: COM S 309
+  
+student10:
+  studentID: tbell
+  sectionNo: A
+  courseCode: COM S 309
+  
+student11:
+  studentID: tnberger
+  sectionNo: A
+  courseCode: COM S 309
+  
+student12:
+  studentID: boeke
+  sectionNo: A
+  courseCode: COM S 309
+  
+student13:
+  studentID: jbradley
+  sectionNo: A
+  courseCode: COM S 309
+  
+student14:
+  studentID: fabianb
+  sectionNo: A
+  courseCode: COM S 309
+  
+student15:
+  studentID: dbrouwer
+  sectionNo: A
+  courseCode: COM S 309
+  
+student16:
+  studentID: mcarlett
+  sectionNo: A
+  courseCode: COM S 309
+  
+student17:
+  studentID: carl1978
+  sectionNo: A
+  courseCode: COM S 309
+  
+student18:
+  studentID: ejcheat
+  sectionNo: A
+  courseCode: COM S 309
+  
+student19:
+  studentID: xiaodong
+  sectionNo: A
+  courseCode: COM S 309
+  
+student20:
+  studentID: mac717
+  sectionNo: A
+  courseCode: COM S 309
+  
+student21:
+  studentID: nclague
+  sectionNo: A
+  courseCode: COM S 309
+  
+student22:
+  studentID: patclark
+  sectionNo: A
+  courseCode: COM S 309
+  
+student23:
+  studentID: lissa07
+  sectionNo: A
+  courseCode: COM S 309
+  
+student24:
+  studentID: ariellec
+  sectionNo: A
+  courseCode: COM S 309
+  
+student25:
+  studentID: mpdavis
+  sectionNo: A
+  courseCode: COM S 309
+  
+student26:
+  studentID: edudelac
+  sectionNo: A
+  courseCode: COM S 309
+  
+student27:
+  studentID: aedomino
+  sectionNo: A
+  courseCode: COM S 309
+  
+student28:
+  studentID: rpeggers
+  sectionNo: A
+  courseCode: COM S 309
+  
+student29:
+  studentID: yezhou
+  sectionNo: A
+  courseCode: COM S 309
+  
+student30:
+  studentID: kfattig
+  sectionNo: A
+  courseCode: COM S 309
+  
+student31:
+  studentID: frericks
+  sectionNo: A
+  courseCode: COM S 309
+  
+student32:
+  studentID: gany
+  sectionNo: A
+  courseCode: COM S 309
+  
+student33:
+  studentID: cgarrett
+  sectionNo: A
+  courseCode: COM S 309
+  
+student34:
+  studentID: mrgoll12
+  sectionNo: A
+  courseCode: COM S 309
+  
+student35:
+  studentID: gramstad
+  sectionNo: A
+  courseCode: COM S 309
+  
+student36:
+  studentID: josephg
+  sectionNo: A
+  courseCode: COM S 309
+  
+student37:
+  studentID: ctgroff
+  sectionNo: A
+  courseCode: COM S 309
+  
+student38:
+  studentID: pkhall
+  sectionNo: A
+  courseCode: COM S 309
+  
+student39:
+  studentID: mharney
+  sectionNo: A
+  courseCode: COM S 309
+  
+student40:
+  studentID: ashashim
+  sectionNo: A
+  courseCode: COM S 309
+  
+student41:
+  studentID: zheilman
+  sectionNo: A
+  courseCode: COM S 309
+  
+student42:
+  studentID: jhenze
+  sectionNo: A
+  courseCode: COM S 309
+  
+student43:
+  studentID: sjhdez
+  sectionNo: A
+  courseCode: COM S 309
+  
+student44:
+  studentID: jayhong
+  sectionNo: A
+  courseCode: COM S 309
+  
+student45:
+  studentID: hukeji
+  sectionNo: A
+  courseCode: COM S 309
+  
+student46:
+  studentID: alecj
+  sectionNo: A
+  courseCode: COM S 309
+  
+student47:
+  studentID: mdjohn
+  sectionNo: A
+  courseCode: COM S 309
+  
+student48:
+  studentID: andrewjo
+  sectionNo: A
+  courseCode: COM S 309
+  
+student49:
+  studentID: kaiserja
+  sectionNo: A
+  courseCode: COM S 309
+  
+student50:
+  studentID: trkalpin
+  sectionNo: A
+  courseCode: COM S 309
+  
+student51:
+  studentID: hkim
+  sectionNo: A
+  courseCode: COM S 309
+  
+student52:
+  studentID: kostya
+  sectionNo: A
+  courseCode: COM S 309
+  
+student53:
+  studentID: askratz
+  sectionNo: A
+  courseCode: COM S 309
+  
+student54:
+  studentID: bkraus
+  sectionNo: A
+  courseCode: COM S 309
+  
+student55:
+  studentID: ckuhfal
+  sectionNo: A
+  courseCode: COM S 309
+  
+student56:
+  studentID: jgkujawa
+  sectionNo: A
+  courseCode: COM S 309
+  
+student57:
+  studentID: jstnlnds
+  sectionNo: A
+  courseCode: COM S 309
+  
+student58:
+  studentID: elarssen
+  sectionNo: A
+  courseCode: COM S 309
+  
+student59:
+  studentID: leblanc
+  sectionNo: A
+  courseCode: COM S 309
+  
+student60:
+  studentID: mlin
+  sectionNo: A
+  courseCode: COM S 309
+  
+student61:
+  studentID: eylin
+  sectionNo: A
+  courseCode: COM S 309
+  
+student62:
+  studentID: madi
+  sectionNo: A
+  courseCode: COM S 309
+  
+student63:
+  studentID: mmallett
+  sectionNo: A
+  courseCode: COM S 309
+  
+student64:
+  studentID: edwinom
+  sectionNo: A
+  courseCode: COM S 309
+  
+student65:
+  studentID: bmaxwell
+  sectionNo: A
+  courseCode: COM S 309
+  
+student66:
+  studentID: seanm1
+  sectionNo: A
+  courseCode: COM S 309
+  
+student67:
+  studentID: trmixson
+  sectionNo: A
+  courseCode: COM S 309
+  
+student68:
+  studentID: mjmoen
+  sectionNo: A
+  courseCode: COM S 309
+  
+student69:
+  studentID: klmoore
+  sectionNo: A
+  courseCode: COM S 309
+  
+student70:
+  studentID: spencerm
+  sectionNo: A
+  courseCode: COM S 309
+  
+student71:
+  studentID: mozqueda
+  sectionNo: A
+  courseCode: COM S 309
+  
+student72:
+  studentID: maneill
+  sectionNo: A
+  courseCode: COM S 309
+  
+student73:
+  studentID: anelson6
+  sectionNo: A
+  courseCode: COM S 309
+  
+student74:
+  studentID: demo
+  sectionNo: A
+  courseCode: COM S 309
+  
+student75:
+  studentID: orem
+  sectionNo: A
+  courseCode: COM S 309
+  
+student76:
+  studentID: panl2
+  sectionNo: A
+  courseCode: COM S 309
+  
+student77:
+  studentID: svperez
+  sectionNo: A
+  courseCode: COM S 309
+  
+student78:
+  studentID: j7peters
+  sectionNo: A
+  courseCode: COM S 309
+  
+student79:
+  studentID: centuri
+  sectionNo: A
+  courseCode: COM S 309
+  
+student80:
+  studentID: kunq
+  sectionNo: A
+  courseCode: COM S 309
+  
+student81:
+  studentID: breber
+  sectionNo: A
+  courseCode: COM S 309
+  
+student82:
+  studentID: dreiser
+  sectionNo: A
+  courseCode: COM S 309
+  
+student83:
+  studentID: mdrench
+  sectionNo: A
+  courseCode: COM S 309
+  
+student84:
+  studentID: dillonr
+  sectionNo: A
+  courseCode: COM S 309
+  
+student85:
+  studentID: rpromore
+  sectionNo: A
+  courseCode: COM S 309
+  
+student86:
+  studentID: jsickora
+  sectionNo: A
+  courseCode: COM S 309
+  
+student87:
+  studentID: jpryan
+  sectionNo: A
+  courseCode: COM S 309
+  
+student88:
+  studentID: sandlund
+  sectionNo: A
+  courseCode: COM S 309
+  
+student89:
+  studentID: sschroe
+  sectionNo: A
+  courseCode: COM S 309
+  
+student90:
+  studentID: lschropp
+  sectionNo: A
+  courseCode: COM S 309
+  
+student91:
+  studentID: jschulz
+  sectionNo: A
+  courseCode: COM S 309
+  
+student92:
+  studentID: mjsenter
+  sectionNo: A
+  courseCode: COM S 309
+  
+student93:
+  studentID: jsmith
+  sectionNo: A
+  courseCode: COM S 309
+  
+student94:
+  studentID: ajsobek
+  sectionNo: A
+  courseCode: COM S 309
+  
+student95:
+  studentID: staley7
+  sectionNo: A
+  courseCode: COM S 309
+  
+student96:
+  studentID: micahs
+  sectionNo: A
+  courseCode: COM S 309
+  
+student97:
+  studentID: seans22
+  sectionNo: A
+  courseCode: COM S 309
+  
+student98:
+  studentID: asu1351
+  sectionNo: A
+  courseCode: COM S 309
+  
+student99:
+  studentID: tansen78
+  sectionNo: A
+  courseCode: COM S 309
+  
+student100:
+  studentID: thuong88
+  sectionNo: A
+  courseCode: COM S 309
+  
+student101:
+  studentID: djturner
+  sectionNo: A
+  courseCode: COM S 309
+  
+student102:
+  studentID: curtisu
+  sectionNo: A
+  courseCode: COM S 309
+  
+student103:
+  studentID: chrisv
+  sectionNo: A
+  courseCode: COM S 309
+  
+student104:
+  studentID: williamv
+  sectionNo: A
+  courseCode: COM S 309
+  
+student105:
+  studentID: mavolk
+  sectionNo: A
+  courseCode: COM S 309
+  
+student106:
+  studentID: wangyaze
+  sectionNo: A
+  courseCode: COM S 309
+  
+student107:
+  studentID: twegter
+  sectionNo: A
+  courseCode: COM S 309
+  
+student108:
+  studentID: jwheeler
+  sectionNo: A
+  courseCode: COM S 309
+  
+student109:
+  studentID: wubo
+  sectionNo: A
+  courseCode: COM S 309
+  
+student110:
+  studentID: yoonjh86
+  sectionNo: A
+  courseCode: COM S 309
+  
+student111:
+  studentID: qzhao
+  sectionNo: A
+  courseCode: COM S 309
+  
+student112:
+  studentID: zyf
+  sectionNo: A
+  courseCode: COM S 309

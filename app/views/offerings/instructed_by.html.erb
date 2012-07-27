@@ -1,0 +1,17 @@
+<h1>Courses You Instruct</h1>
+
+<table>
+  <tr>
+    <th>Coursecode</th>
+    <th></th>
+  </tr>
+
+<% @offerings.each do |offering| %>
+  <tr>
+    <td><%= offering.courseCode %></td>
+    <td><a href="<%= url_for :controller => 'offerings', :action => 'index', :courseID => offering.courseCode %>">Poll Management</a></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Back', home_home_path %>

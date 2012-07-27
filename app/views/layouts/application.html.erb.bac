@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cyclicker</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="header"><%= link_to 'All Accounts', accounts_path %></div>
+<div id="notice_wrapper"><div id="notice"></div></div>
+<div id="content" ><%= yield %></div>
+</body>
+</html>

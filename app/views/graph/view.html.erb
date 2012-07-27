@@ -1,0 +1,146 @@
+
+<div align="center">
+
+<div id="chart1" style="margin-top:20px; margin-left:20px; width:<%= @width %>px; height:<%= @height %>px;">Loading Chart Data...</div>
+  <a onclick="GLOBAL_STOP = true;" href="<%= poll_path params[:poll_id] %>">< Back To Quiz</a>
+
+<script type="text/javascript">
+
+
+
+    $.extend({
+    getUrlVars: function() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) { vars[key] = value; });
+    return vars;
+    }
+    });
+    var id = <%= params[:id]%>
+
+
+
+    var bob;
+      $.ajax({
+              url: "<%= url_for :controller => 'graph', :action => 'ticks' %>",
+              type: "POST",
+              data: {
+                id: id
+              },
+              dataType: "json",
+              success: function(data) {
+                  //alert(data);
+                  bob = data
+              }
+            });
+
+
+    var runCount = 0;
+    function timerMethod() {
+
+        if(GLOBAL_STOP == true){
+            clearInterval(timerMethod);
+
+
+        }
+
+
+
+
+        runCount++;
+
+
+        if(runCount > 1000) clearInterval(timerMethod);
+        if(runCount == 1){
+            ar = true;
+        }
+        else{
+            ar = false;
+        }
+        $.ajax({
+                url: "<%= url_for :controller => 'graph', :action => 'plot' %>",
+                type: "POST",
+                data: {
+                  id: id
+                },
+                dataType: "json",
+                success: function(data) {
+                  var plot1, s1;
+                  $.jqplot.config.enablePlugins = true;
+                  s1 = data;
+                  //ticks = ["app", "b", "c", "d"];
+
+
+                  plot1 = $.jqplot("chart1", [s1], {
+                    animateReplot : ar,
+                    animate: !$.jqplot.use_excanvas,
+                    seriesDefaults: {
+                      renderer: $.jqplot.BarRenderer,
+                      pointLabels: {
+                        show: true
+                      }
+                    },
+                    axes: {
+                      xaxis: {
+                        renderer: $.jqplot.CategoryAxisRenderer,
+                        ticks: bob
+                      },
+                      yaxis: {
+                        padMin: 0,
+                        padMax: 1,
+                        rendererOptions: {
+                          forceTickAt0: true,
+                          forceTickAt100: true
+                        }
+                      }
+                    },
+                    highlighter: {
+                      show: false
+                    },
+                    seriesColors: [ "maroon", "maroon", "maroon", "maroon"]
+                  }).replot();
+                  return $("#chart1").bind("jqplotDataClick", function(ev, seriesIndex, pointIndex, data) {
+                    return $("#info1").html("Answer: " + pointIndex + ", Number Of Answers: " + data.substr(',')[2]);
+                  });
+                }
+              });
+
+
+    }
+    $(document).ready(function(){
+        timerMethod();
+
+
+
+    })
+
+    <% if session[:account].account_type == "instructor" %>
+        var timerId = setInterval(timerMethod, 3000);    //60,000 milliseconds
+    <% end %>
+
+
+
+
+
+
+
+
+</script>
+
+
+
+<%= javascript_include_tag "../jqplot/jquery.jqplot.js" %>
+<%= javascript_include_tag "../jqplot/plugins/jqplot.barRenderer.js" %>
+<%= javascript_include_tag "../jqplot/plugins/jqplot.categoryAxisRenderer.js" %>
+<% javascript_include_tag "../jqplot/plugins/jqplot.pointLabels.js" %>
+
+
+
+
+
+  </div>
+
+
+<script type="text/javascript">
+    $('#content').trigger("create");
+    $('#notice').html('Question <%= params[:number]%> Results');
+</script>
